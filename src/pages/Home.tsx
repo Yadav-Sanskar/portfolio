@@ -13,15 +13,15 @@ function Home() {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 max-w-6xl mx-auto">
         {/* Profile Card */}
         <div className="card-static md:col-span-7">
-          <div className="flex flex-col md:flex-row gap-6">
+          <div className="flex flex-col md:flex-row gap-6 mt-6 ">
             <img 
               src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=300&h=300"
               alt="Profile"
-              className="w-40 h-40 md:w-48 md:h-48 rounded-2xl object-cover"
+              className="w-40 h-40 md:w-48 md:h-48 rounded-2xl object-cover block mx-auto "
             />
             <div>
               <p className="text-gray-400 text-sm mb-2">A FULL-STACK DEVELOPER & TECH ENTHUSIAST</p>
-              <h1 className="text-3xl md:text-4xl font-bold mb-2">David Henderson.</h1>
+              <h1 className="text-3xl md:text-4xl font-bold mb-2">Sanskar Yadav.</h1>
               <p className="text-gray-400">I don’t just develop—I craft scalable, intelligent, and impactful solutions.</p>
             </div>
           </div>
@@ -86,7 +86,7 @@ function Home() {
         {/* Bottom Row */}
         <div className="md:col-span-4">
           {/* Blog Card */}
-          <div className="card group">
+          <div className="card group ">
             <div className="flex items-center gap-4">
               <div className="w-16 h-16 flex-shrink-0">
                 <img 
@@ -105,6 +105,7 @@ function Home() {
             </div>
           </div>
         </div>
+        
 
         {/* Services Card */}
         <div className="card-static md:col-span-4">
