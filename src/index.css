@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#111111] text-white font-sans;
+  }
+}
+
+.card {
+  @apply bg-[#1a1a1a] rounded-2xl p-6 hover:bg-[#222222] transition-all duration-300 relative overflow-hidden;
+}
+
+.card-static {
+  @apply bg-[#1a1a1a] rounded-2xl p-6 relative overflow-hidden;
+}
+
+.heading {
+  @apply text-4xl md:text-5xl font-bold mb-6;
+}
+
+.nav-link {
+  @apply text-gray-400 hover:text-white transition-colors;
+}
+
+.button {
+  @apply bg-[#222222] hover:bg-[#333333] text-white px-6 py-2 rounded-full transition-all;
+}
+
+.marquee {
+  @apply overflow-hidden whitespace-nowrap;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+input, textarea {
+  @apply bg-[#222222] border-none rounded-lg p-4 w-full text-white focus:ring-2 focus:ring-blue-500 focus:outline-none;
+}
+
+.arrow-icon {
+  @apply w-8 h-8 bg-[#222222] rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300;
+}
+
+@media (max-width: 768px) {
+  .card, .card-static {
+    @apply p-4;
+  }
+}
