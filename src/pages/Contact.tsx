@@ -6,12 +6,12 @@ function Contact() {
     <motion.div
       className="container mx-auto px-6 pt-32"
       initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
+      animate={{ opacity: 1, y: 20 }}
       exit={{ opacity: 0, y: -20 }}
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-2   ">
         <div>
-          <h2 className="text-xl font-bold mb-8">CONTACT INFO</h2>
+          <h2 className="text-xl font-bold mb-8 " >CONTACT INFO</h2>
           <div className="space-y-8">
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 bg-[#222222] rounded-full flex items-center justify-center">
@@ -19,8 +19,8 @@ function Contact() {
               </div>
               <div>
                 <p className="text-sm text-gray-400">MAIL US</p>
-                <p>info@bluebase.com</p>
-                <p>info@bluebase2.com</p>
+                <p>ysanskar984@gmail.com</p>
+                <p>ysanskar984@gmail.com</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
@@ -29,8 +29,8 @@ function Contact() {
               </div>
               <div>
                 <p className="text-sm text-gray-400">CONTACT US</p>
-                <p>+1 504-899-8221</p>
-                <p>+1 504-749-5456</p>
+                <p>+91 932-457-9089</p>
+                <p>+91 504-749-5456</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
@@ -39,9 +39,9 @@ function Contact() {
               </div>
               <div>
                 <p className="text-sm text-gray-400">LOCATION</p>
-                <p>22 Baker Street, Texas</p>
-                <p>United States</p>
-                <p>W1U 3BW</p>
+                <p>Thane, Maharashtra</p>
+                <p>India</p>
+                <p>400612</p>
               </div>
             </div>
           </div>
@@ -60,10 +60,10 @@ function Contact() {
           </div>
         </div>
 
-        <div className="card-static">
+        <div className="card-static  ">
           <div className="flex items-center mb-8">
-            <h2 className="text-3xl font-bold">Let's work </h2>
-            <p className="text-3xl font-bold text-blue-500 ml-2">together.</p>
+            <h2 className="text-4xl font-bold">Let's work </h2>
+            <p className="text-4xl font-bold text-blue-500 ml-2">together.</p>
           </div>
           <form className="space-y-6">
             <input

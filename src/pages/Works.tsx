@@ -37,39 +37,46 @@ function Works() {
 
   return (
     <motion.div
-      className="container mx-auto px-6 pt-32"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -20 }}
-    >
-      <div className="flex items-center mb-12">
-        <span className="star-decoration">✦</span>
-        <h1 className="text-4xl font-bold">ALL PROJECTS</h1>
-        <span className="star-decoration">✦</span>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projects.map((project, index) => (
-          <motion.div
-            key={index}
-            className="card group relative"
-            whileHover={{ scale: 1.02 }}
-          >
-            <img
-              src={project.image}
-              alt={project.title}
-              className="w-full h-48 object-cover rounded-xl mb-4"
-            />
-            <div>
-              <p className="text-gray-400 text-sm">{project.category}</p>
-              <h3 className="text-xl font-bold">{project.title}</h3>
-            </div>
-            <div className="arrow-icon absolute bottom-6 right-6">
-              <ArrowUpRight className="w-4 h-4" />
-            </div>
-          </motion.div>
-        ))}
-      </div>
-    </motion.div>
+  className="container mx-auto px-6 pt-32"
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  exit={{ opacity: 0, y: -20 }}
+>
+  <div className="flex items-center mb-12">
+    <span className="star-decoration">✦</span>
+    <h1 className="text-5xl font-bold">ALL PROJECTS</h1>
+    <span className="star-decoration">✦</span>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {projects.map((project, index) => (
+      <motion.div
+        key={index}
+        className="card group relative overflow-hidden transition-all duration-500 z-10
+          before:content-[''] before:absolute before:inset-0 before:rounded-xl 
+          before:bg-white before:blur-3xl before:opacity-0 before:scale-110 
+          before:transition-all before:duration-700 before:z-[-1] 
+          hover:before:opacity-30 hover:before:scale-[1.4] hover:before:blur-[50px]"
+        whileHover={{ scale: 1.03 }}
+      >
+        <img
+          src={project.image}
+          alt={project.title}
+          className="w-full h-48 object-cover rounded-xl mb-4"
+        />
+        <div>
+          <p className="text-gray-400 text-sm">{project.category}</p>
+          <h3 className="text-xl font-bold">{project.title}</h3>
+        </div>
+        <div className="arrow-icon absolute bottom-6 right-6">
+          <ArrowUpRight className="w-4 h-4" />
+        </div>
+      </motion.div>
+    ))}
+  </div>
+</motion.div>
+
+
   );
 }
 

@@ -68,78 +68,85 @@ function About() {
           <h2 className="text-2xl font-bold mb-8">EDUCATION</h2>
           <div className="space-y-8">
             <div>
-              <p className="text-gray-400">2004 - 2007</p>
-              <p className="font-bold text-xl">Bachelor Degree in Psychology</p>
-              <p className="text-gray-400">University of California</p>
+              <p className="text-gray-400">2019 - 2021</p>
+              <p className="font-bold text-xl">Higher Secondary Certificate (HSC)</p>
+              <p className="text-gray-400">University of Mumbai</p>
             </div>
             <div>
-              <p className="text-gray-400">2007 - 2009</p>
-              <p className="font-bold text-xl">Master Degree in Designing</p>
-              <p className="text-gray-400">University of Texas</p>
+              <p className="text-gray-400">2021 - 2025</p>
+              <p className="font-bold text-xl">Bachelor of Technology (B.Tech) in Electronics & Telecommunication</p>
+              <p className="text-gray-400">University of Mumbai</p>
             </div>
           </div>
         </div>
       </div>
 
       {/* Bottom Cards Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-        {/* Profiles Card */}
-        <div className="md:col-span-3">
-          <div className="card group">
-            <div>
-              <p className="text-gray-400 text-sm mb-2">STAY WITH ME</p>
-              <h2 className="text-xl font-bold mb-4">Profiles</h2>
-            </div>
-            <div className="flex gap-4">
-              <div className="w-12 h-12 bg-[#222222] rounded-full flex items-center justify-center">
-                <Dribbble className="w-6 h-6" />
-              </div>
-              <div className="w-12 h-12 bg-[#222222] rounded-full flex items-center justify-center">
-                <Twitter className="w-6 h-6" />
-              </div>
-            </div>
-            <div className="arrow-icon absolute bottom-4 right-4">
-              <ArrowUpRight className="w-4 h-4" />
-            </div>
-          </div>
-        </div>
+<div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+  {/* Profiles Card */}
+  <div className="md:col-span-3">
+  <div className="card group h-full flex flex-col justify-between">
+    <div>
+      <p className="text-gray-400 text-sm mb-2">STAY WITH ME</p>
+      <h2 className="text-xl font-bold mb-4">Profiles</h2>
+    </div>
+    <div className="flex gap-4 justify-center">
+      {/* Dribbble Icon */}
+      <div className="w-14 h-14 bg-[#222222] rounded-full flex items-center justify-center lg:w-24 lg:h-24 
+                  transition-all duration-300 hover:shadow-[0_0_15px_#00FFFF] hover:bg-[#00FFFF1A]">
+        <Dribbble className="w-7 h-7 lg:w-12 lg:h-12 text-white transition-colors duration-300 hover:text-cyan-400" />
+      </div>
 
-        {/* Let's Work Together Card */}
-        <div className="md:col-span-6">
-          <div className="card group">
-            <div className="flex items-center">
-              <div>
-                <h2 className="text-3xl font-bold">Let's</h2>
-                <div className="flex items-center gap-2">
-                  <span className="text-3xl font-bold">work</span>
-                  <span className="text-3xl font-bold text-blue-500">together.</span>
-                </div>
-              </div>
-            </div>
-            <div className="arrow-icon absolute bottom-4 right-4">
-              <ArrowUpRight className="w-4 h-4" />
-            </div>
-          </div>
-        </div>
+      {/* Twitter Icon */}
+      <div className="w-14 h-14 bg-[#222222] rounded-full flex items-center justify-center lg:w-24 lg:h-24 
+                  transition-all duration-300 hover:shadow-[0_0_15px_#00FFFF] hover:bg-[#00FFFF1A]">
+        <Twitter className="w-7 h-7 lg:w-12 lg:h-12 text-white transition-colors duration-300 hover:text-cyan-400" />
+      </div>
+    </div>
+    <div className="arrow-icon absolute bottom-4 right-4">
+      <ArrowUpRight className="w-4 h-4 lg:w-6 lg:h-6" />
+    </div>
+  </div>
+</div>
 
-        {/* Credentials Card */}
-        <div className="md:col-span-3">
-          <div className="card group">
-            <div>
-              <p className="text-gray-400 text-sm mb-2">MORE ABOUT ME</p>
-              <h2 className="text-xl font-bold">Credentials</h2>
-            </div>
-            <img 
-              src="https://images.unsplash.com/photo-1618788372246-79faff0c3742?auto=format&fit=crop&w=300&h=100"
-              alt="Signature"
-              className="mt-4 w-full opacity-50"
-            />
-            <div className="arrow-icon absolute bottom-4 right-4">
-              <ArrowUpRight className="w-4 h-4" />
-            </div>
-          </div>
+
+  {/* Let's Work Together Card */}
+  <div className="md:col-span-6">
+  <div className="card group h-full flex flex-col justify-between">
+    <div className="flex items-center">
+      <div>
+        <h2 className="text-3xl lg:text-5xl font-bold">Let's</h2>
+        <div className="flex items-center gap-2">
+          <span className="text-3xl lg:text-5xl font-bold">work</span>
+          <span className="text-3xl lg:text-5xl font-bold text-blue-500">together.</span>
         </div>
       </div>
+    </div>
+    <div className="arrow-icon absolute bottom-4 right-4">
+      <ArrowUpRight className="w-4 h-4" />
+    </div>
+  </div>
+</div>
+
+  {/* Credentials Card */}
+  <div className="md:col-span-3">
+    <div className="card group h-full flex flex-col justify-between">
+      <div>
+        <p className="text-gray-400 text-sm mb-2">MORE ABOUT ME</p>
+        <h2 className="text-xl font-bold">Credentials</h2>
+      </div>
+      <img 
+        src="https://images.unsplash.com/photo-1618788372246-79faff0c3742?auto=format&fit=crop&w=300&h=100"
+        alt="Signature"
+        className="mt-4 w-full opacity-50"
+      />
+      <div className="arrow-icon absolute bottom-4 right-4">
+        <ArrowUpRight className="w-4 h-4" />
+      </div>
+    </div>
+  </div>
+</div>
+
     </motion.div>
   );
 }

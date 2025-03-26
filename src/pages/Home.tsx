@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { Camera, Home as HomeIcon, Layers, Zap, ArrowUpRight } from 'lucide-react';
+import { Camera, Home as HomeIcon, Layers, Zap, ArrowUpRight, Github, Linkedin,   } from 'lucide-react';
+
 import { Link } from 'react-router-dom';
 
 function Home() {
@@ -40,9 +41,11 @@ function Home() {
           {/* Marquee Text */}
           <div className="card-static py-2 px-4">
             <div className="marquee">
-              <span className="inline-block text-sm text-gray-400">
-              • LATEST WORK AND FEATURED • LATEST WORK AND FEATURED • LATEST WORK AND FEATURED
-              </span>
+            <span className="inline-block text-sm text-gray-400">
+             • LATEST WORK AND <span className="text-white">FEATURED</span>  • LATEST WORK AND <span className="text-white">FEATURED</span>  
+             </span>
+
+
             </div>
           </div>
 
@@ -139,48 +142,75 @@ function Home() {
           </div>
         </div>
 
-        {/* Profiles Card */}
-        <div className="card group md:col-span-4">
-          <div>
-            <p className="text-gray-400 text-sm mb-1">STAY WITH ME</p>
-            <h2 className="text-xl font-bold">Profiles</h2>
-          </div>
-          <div className="flex gap-4 mt-4">
-            <div className="w-10 h-10 bg-[#222222] rounded-full flex items-center justify-center">
-              <HomeIcon className="w-5 h-5" />
-            </div>
-            <div className="w-10 h-10 bg-[#222222] rounded-full flex items-center justify-center">
-              <HomeIcon className="w-5 h-5" />
-            </div>
-          </div>
-          <div className="arrow-icon absolute bottom-4 right-4">
-            <ArrowUpRight className="w-4 h-4" />
-          </div>
-        </div>
+       {/* Profiles Card */}
+<div className="card group md:col-span-4">
+  <div>
+    <p className="text-gray-400 text-sm mb-1">STAY WITH ME</p>
+    <h2 className="text-xl font-bold">Profiles</h2>
+  </div>
 
-        {/* Stats Card */}
-        <div className="card-static md:col-span-6">
-          <div className="grid grid-cols-3 gap-4">
-            <div>
-              <div className="text-4xl font-bold">07</div>
-              <div className="text-gray-400 text-sm mt-2">YEARS<br />EXPERIENCE</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold">+125</div>
-              <div className="text-gray-400 text-sm mt-2">CLIENTS<br />WORLDWIDE</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold">+210</div>
-              <div className="text-gray-400 text-sm mt-2">TOTAL<br />PROJECTS</div>
-            </div>
-          </div>
-        </div>
+  <div className="flex gap-4 mt-4">
+    {/* GitHub Icon */}
+    <div className="w-14 h-14 bg-[#222222] rounded-full flex items-center justify-center lg:w-24 lg:h-24 
+                transition-all duration-300 hover:shadow-[0_0_15px_#00FFFF] hover:bg-[#00FFFF1A]">
+      <Github className="w-7 h-7 lg:w-12 lg:h-12 text-white transition-colors duration-300 hover:text-cyan-400" />
+    </div>
+
+    {/* LinkedIn Icon */}
+    <div className="w-14 h-14 bg-[#222222] rounded-full flex items-center justify-center lg:w-24 lg:h-24 
+                transition-all duration-300 hover:shadow-[0_0_15px_#00FFFF] hover:bg-[#00FFFF1A]">
+      <Linkedin className="w-7 h-7 lg:w-12 lg:h-12 text-white transition-colors duration-300 hover:text-cyan-400" />
+    </div>
+  </div>
+
+  <div className="arrow-icon absolute bottom-4 right-4">
+    <ArrowUpRight className="w-4 h-4 lg:w-6 lg:h-6" />
+  </div>
+</div>
+
+
+
+
+
+
+     {/* Stats Card */}
+<div className="card-static md:col-span-6">
+  <div className="grid grid-cols-3 gap-4">
+    
+    {/* 1st Box */}
+    <div className="relative group">
+      <div className="absolute -top-1 -bottom-1 -left-1 -right-1 border border-white/10 rounded-lg transition duration-300 group-hover:shadow-lg group-hover:shadow-white/25"></div> {/* Border & Glow */}
+      <div className="relative z-10 text-4xl font-bold">01</div>
+      <div className="relative z-10 text-gray-400 text-sm mt-2">YEARS<br />EXPERIENCE</div>
+    </div>
+
+    {/* 2nd Box */}
+    <div className="relative group">
+      <div className="absolute -top-1 -bottom-1 -left-1 -right-1 border border-white/10 rounded-lg transition duration-300 group-hover:shadow-lg group-hover:shadow-white/25"></div> {/* Border & Glow */}
+      <div className="relative z-10 text-4xl font-bold">+3</div>
+      <div className="relative z-10 text-gray-400 text-sm mt-2">CLIENTS<br />WORLDWIDE</div>
+    </div>
+
+    {/* 3rd Box */}
+    <div className="relative group">
+      <div className="absolute -top-1 -bottom-1 -left-1 -right-1 border border-white/10 rounded-lg transition duration-300 group-hover:shadow-lg group-hover:shadow-white/25"></div> {/* Border & Glow */}
+      <div className="relative z-10 text-4xl font-bold">+14</div>
+      <div className="relative z-10 text-gray-400 text-sm mt-2">TOTAL<br />PROJECTS</div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
 
         {/* Let's Work Together Card */}
         <div className="card group md:col-span-6">
           <div>
-            <h2 className="text-3xl font-bold">Let's work</h2>
-            <p className="text-3xl font-bold text-blue-500">together.</p>
+            <h2 className="text-3xl font-bold">Let's </h2>
+            <span className="text-white text-4xl  font-bold">work  </span>  <span className="text-4xl font-bold text-blue-500">  together.</span>
+            
           </div>
           <div className="arrow-icon absolute bottom-4 right-4">
             <ArrowUpRight className="w-4 h-4" />
